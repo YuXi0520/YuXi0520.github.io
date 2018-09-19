@@ -51,6 +51,14 @@ window._CCSettings = {
                 "Texture/ball3.png",
                 "cc.Texture2D"
             ],
+            c3feeK2RNAeaX0GQxD0oPO: [
+                "Texture/enemy0.png",
+                "cc.Texture2D"
+            ],
+            "2b53dqJ/JNXp/jvl1mraz6": [
+                "Texture/enemy1.png",
+                "cc.Texture2D"
+            ],
             "e2Xd+U0HhHrJ2JiApgHxSy": [
                 "Texture/score_frame.png",
                 "cc.Texture2D"
@@ -67,7 +75,7 @@ window._CCSettings = {
                 "Texture/待机哪吒_1 .png",
                 "cc.Texture2D"
             ],
-            e4VH5eprZFmbTzLYlUq0Xw: [
+            f82FhCcHxCAL4LNw79Hau5: [
                 "Texture/最终版开始界面-da.png",
                 "cc.Texture2D"
             ],
@@ -81,10 +89,6 @@ window._CCSettings = {
             ],
             "4b+aRTVRRC1rG1k/WuxEen": [
                 "Texture/最终版开始界面-zi.png",
-                "cc.Texture2D"
-            ],
-            "473bsO44VFdrrcYQ/YkhES": [
-                "Texture/海怪1.png",
                 "cc.Texture2D"
             ],
             "2cSa/xmhJJsbSbEzmSKrUg": [
@@ -102,6 +106,34 @@ window._CCSettings = {
             e8C3atKl1EWrFnowQ4qagg: [
                 "Texture/背景_海.png",
                 "cc.Texture2D"
+            ],
+            "432TTw0DpK5pp90NxlUPjT": [
+                "juqing-tu/153283191281613.png",
+                "cc.Texture2D"
+            ],
+            "8a87Gt2p1JyKXOaukWAnK4": [
+                "juqing-tu/153283211887971.png",
+                "cc.Texture2D"
+            ],
+            "6fdMYjC+lC5bnrwEZGLLKm": [
+                "juqing-tu/图片2.1.png",
+                "cc.Texture2D"
+            ],
+            "beRelflfZOZ7q5/8F92Ygm": [
+                "juqing-tu/图片2.2.png",
+                "cc.Texture2D"
+            ],
+            "44Wnc7dWlJyKbWJbEW094f": [
+                "juqing-tu/图片2.3.png",
+                "cc.Texture2D"
+            ],
+            "d8Y3K3AiFN/K1DBwO6Ky+7": [
+                "juqing-tu/海浪2.png",
+                "cc.Texture2D"
+            ],
+            acP1RNxvlBWr1CgB5UxZkV: [
+                "juqing-tu/结束界面1.png",
+                "cc.Texture2D"
             ]
         },
         internal: {
@@ -116,6 +148,10 @@ window._CCSettings = {
         {
             url: "db://assets/Scene/start-scene.fire",
             uuid: "85wmr3iKlA4Yy2evSjkNJS"
+        },
+        {
+            url: "db://assets/Scene/juqing-scene.fire",
+            uuid: "340YsnsL5OmZRIkTiixEQB"
         },
         {
             url: "db://assets/Scene/main-scene.fire",
@@ -138,15 +174,28 @@ window._CCSettings = {
             "7dJ9/Q1QlHvKNdfa9JgHN9",
             "a7tGS5v59Mi5cU9mxDxol9"
         ],
-        "09e8b509a": [
+        "08873416e": [
+            "148ENPjH5FNK3A8XYaLqIr",
+            "1ahmEfeXhBLqL8roF2bBYQ",
+            "26dbgPxQJM1YNrMo/O+0wM",
+            "340YsnsL5OmZRIkTiixEQB",
+            "7cXslLSeFKYavOtH4yM1aQ",
+            "b7fMDxSz1FDpkWVmv7UNr9",
+            "d376Jk2OBO+rJJAyYUMmcL",
+            "d5Ja4lXExOt4WB5LZdTEpL",
+            "e3nSax22hKprQqYSAA2Ri/",
+            "f06MuP6ghGmqYcrfpQBHsK",
+            "f1fYrDdKdA1qB0iPC29aAq"
+        ],
+        "088997c4b": [
             "2d+121ECtDgbTesdzBJB8S",
             "6dedZ84WFC7rJVrBfgsoc2",
             "70Nk9tO45D6J1BoNbc0cZm",
             "85wmr3iKlA4Yy2evSjkNJS",
-            "9aFS5jEStKnqyzZs2qvKoL",
+            "b0Mp0DAm5GKJurz6XdWYlK",
             "e3nSax22hKprQqYSAA2Ri/"
         ],
-        "0d9a56d12": [
+        "0b8acbef5": [
             "09nf80NTZHCbt6EvIvUHI5",
             "1bSNWVcQpALImgiUiGjtz/",
             "26dbgPxQJM1YNrMo/O+0wM",
@@ -160,9 +209,11 @@ window._CCSettings = {
             "84xDwjQAtELZZwXDtxj9Pc",
             "8c20Sso/ZEn7NUfNSM+EBh",
             "95UrTgtRlEUrsEmHbe7DlN",
-            "c3TiwoSzFJl45GQqqxI0pY",
+            "aepl5fCLhJ+7ExuUMg/36S",
+            "b3+lzg7LVEcrlMtUR7k/0F",
             "c5ByvhlNBKkLiksBXUx/gU",
-            "e8HhAiYRVG9K85VXv90+Uf"
+            "e8HhAiYRVG9K85VXv90+Uf",
+            "f8MbbHWwJA35oc6egdP+9p"
         ]
     },
     orientation: "landscape",
