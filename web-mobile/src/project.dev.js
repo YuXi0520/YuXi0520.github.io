@@ -113,8 +113,8 @@ require = function() {
         }
       },
       _allDirectionsMove: function _allDirectionsMove() {
-        this._playerNode.x += Math.cos(this._angle * (Math.PI / 180)) * this._speed * 3.5;
-        this._playerNode.y += Math.sin(this._angle * (Math.PI / 180)) * this._speed * 3.5;
+        this._playerNode.x += Math.cos(this._angle * (Math.PI / 180)) * this._speed * 2.5;
+        this._playerNode.y += Math.sin(this._angle * (Math.PI / 180)) * this._speed * 2.5;
       },
       _getDistance: function _getDistance(pos1, pos2) {
         return Math.sqrt(Math.pow(pos1.x - pos2.x, 2) + Math.pow(pos1.y - pos2.y, 2));
@@ -311,51 +311,6 @@ require = function() {
     });
     cc._RF.pop();
   }, {} ],
-  daoyan: [ function(require, module, exports) {
-    "use strict";
-    cc._RF.push(module, "8cbfb6YaRlG3pXeskPjXfoA", "daoyan");
-    "use strict";
-    cc.Class({
-      extends: cc.Component,
-      properties: {
-        long: cc.Node,
-        shui1: cc.Node,
-        shui2: cc.Node,
-        lang: cc.Node,
-        ju1: cc.Node,
-        ju2: cc.Node,
-        wanLabel: cc.Node,
-        start_btn: cc.Node,
-        nezha: cc.Node
-      },
-      onLoad: function onLoad() {
-        cc.director.preloadScene("main-scene", function() {
-          cc.log("Next scene preloaded");
-        });
-        this.long.opacity = 0;
-        this.shui1.opacity = 0;
-        this.shui2.opacity = 0;
-        this.lang.opacity = 0;
-        this.ju1.opacity = 0;
-        this.ju2.opacity = 0;
-        this.wanLabel.opacity = 0;
-        this.start_btn.opacity = 0;
-        this.nezha.opacity = 0;
-      },
-      start: function start() {
-        this.ju1.runAction(cc.sequence(cc.delayTime(.5), cc.fadeIn(1), cc.delayTime(8), cc.fadeOut(1)));
-        this.long.runAction(cc.sequence(cc.delayTime(.5), cc.fadeIn(.1), cc.moveTo(2, 211, 104), cc.delayTime(.5), cc.moveTo(.5, 193, 59), cc.delayTime(5), cc.fadeOut(1)));
-        this.shui1.runAction(cc.sequence(cc.delayTime(3.5), cc.fadeIn(.1), cc.moveTo(2, -90, -104), cc.fadeOut(.5)));
-        this.shui2.runAction(cc.sequence(cc.delayTime(4), cc.fadeIn(.1), cc.moveTo(2, -182, -90), cc.fadeOut(.5)));
-        this.lang.runAction(cc.sequence(cc.delayTime(6.5), cc.fadeIn(.1), cc.moveTo(2, 0, -109)));
-        this.ju2.runAction(cc.sequence(cc.delayTime(10.5), cc.fadeIn(1), cc.delayTime(8), cc.fadeOut(1)));
-        this.nezha.runAction(cc.sequence(cc.delayTime(11.5), cc.fadeIn(.1), cc.moveTo(2, -193, 136), cc.delayTime(1), cc.rotateTo(1, 45), cc.delayTime(.5), cc.moveTo(2, 209, -168), cc.fadeOut(1)));
-        this.wanLabel.runAction(cc.sequence(cc.delayTime(20.5), cc.fadeIn(1)));
-        this.start_btn.runAction(cc.sequence(cc.delayTime(20.5), cc.fadeIn(1)));
-      }
-    });
-    cc._RF.pop();
-  }, {} ],
   "enemy-1": [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "6e79az0VIZDBJCyXz+7j6in", "enemy-1");
@@ -416,9 +371,9 @@ require = function() {
             return;
           }
           var enemyNum = this.deltaNum * this._currentTime;
-          var interval = 2 / this._currentTime;
+          var interval = 1;
           var repeat = enemyNum;
-          var delay = .01;
+          var delay = .1;
           this.schedule(function() {
             var randomIdx = Math.floor(Math.random() * this.enemyPrefabArray.length);
             var enemy = cc.instantiate(this.enemyPrefabArray[randomIdx]);
@@ -428,8 +383,8 @@ require = function() {
             enemy.position = originPosition;
           }, interval, repeat, delay);
           this._currentTime++;
-          com.data = this._currentTime;
           this.currentTimLabel.string = this._currentTime;
+          com.data = this._currentTime;
         }
       }
     });
@@ -667,10 +622,10 @@ require = function() {
         var at = 180 * Math.atan(o / a) / Math.PI;
         a < 0 && (at = o < 0 ? 180 + Math.abs(at) : 180 - Math.abs(at));
         if (locationInNode.x > 0) {
-          this._player.setScaleX(-.32);
+          this._player.setScaleX(-.23);
           var rotate = cc.rotateTo(.2, at - 120);
         } else {
-          this._player.setScaleX(.32);
+          this._player.setScaleX(.23);
           var rotate = cc.rotateTo(.2, at + 120);
         }
         this._player.runAction(rotate);
@@ -785,9 +740,6 @@ require = function() {
         cc.director.preloadScene("main-scene", function() {
           cc.log("Next scene preloaded");
         });
-        cc.director.preloadScene("juqing-scene", function() {
-          cc.log("Next scene preloaded");
-        });
         this.start_zi.opacity = 0;
         this.start_long.opacity = 0;
         this.start_ren.opacity = 0;
@@ -807,25 +759,9 @@ require = function() {
         this.start_btn.on("touchstart", this.playGame, this);
       },
       playGame: function playGame() {
-        cc.director.loadScene("juqing-scene");
-      }
-    });
-    cc._RF.pop();
-  }, {} ],
-  "tiaoguo-script": [ function(require, module, exports) {
-    "use strict";
-    cc._RF.push(module, "f73efgRT59KEK86QJhxda8i", "tiaoguo-script");
-    "use strict";
-    cc.Class({
-      extends: cc.Component,
-      properties: {},
-      update: function update() {
-        this.node.on("touchstart", this.playGame, this);
-      },
-      playGame: function playGame() {
         cc.director.loadScene("main-scene");
       }
     });
     cc._RF.pop();
   }, {} ]
-}, {}, [ "Common", "Joystick", "JoystickBG", "JoystickBar", "attack-script", "enemy-1", "enemy-generator", "enemy-test-script", "entity-data", "equip-2", "equip-test", "hp-tips-script", "player--test-script", "player-zhuanxiang", "restart-script", "root", "shou", "start-Script", "daoyan", "tiaoguo-script" ]);
+}, {}, [ "Common", "Joystick", "JoystickBG", "JoystickBar", "attack-script", "enemy-1", "enemy-generator", "enemy-test-script", "entity-data", "equip-2", "equip-test", "hp-tips-script", "player--test-script", "player-zhuanxiang", "restart-script", "root", "shou", "start-Script" ]);

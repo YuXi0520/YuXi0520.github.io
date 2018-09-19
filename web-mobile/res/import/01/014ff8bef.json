@@ -1,1 +1,568 @@
-[[{"__type__":"cc.SceneAsset","_name":"game-over-scene","scene":{"__id__":1},"asyncLoadAssets":null},{"__type__":"cc.Scene","_name":"New Node","_children":[{"__id__":2}],"_anchorPoint":{"__type__":"cc.Vec2"},"autoReleaseAssets":false},{"__type__":"cc.Node","_name":"Canvas","_parent":{"__id__":1},"_children":[{"__id__":3}],"_components":[{"__type__":"cc.Canvas","node":{"__id__":2}}],"_id":"4fZxW0GNJLrr3NzDnhF9RT","_contentSize":{"__type__":"cc.Size","width":960,"height":640},"_scaleX":0.98,"_scaleY":0.98,"_position":{"__type__":"cc.Vec2","x":480,"y":320}},{"__type__":"cc.Node","_name":"结束界面1","_parent":{"__id__":2},"_children":[{"__id__":4},{"__id__":5},{"__id__":8},{"__id__":12},{"__id__":13},{"__id__":14},{"__id__":15}],"_components":[{"__type__":"cc.Sprite","node":{"__id__":3},"_spriteFrame":{"__uuid__":"5abFX7i4NIMbs4zpF/BMo4"}},{"__type__":"8f02apxiT5AaZP7x+xRE64n","node":{"__id__":3},"restart_btn":{"__id__":4},"currentTimLabel":{"__id__":7},"mostCurrentTimLabel":{"__id__":11},"longshuo1":{"__id__":12},"longshuo2":{"__id__":13},"longshuo3":{"__id__":14},"longshuo4":{"__id__":15}}],"_contentSize":{"__type__":"cc.Size","width":1024,"height":509},"_scaleX":1.27,"_scaleY":1.27,"_position":{"__type__":"cc.Vec2","x":5,"y":3}},{"__type__":"cc.Node","_name":"结束界面-再玩一次","_parent":{"__id__":3},"_components":[{"__type__":"cc.Sprite","node":{"__id__":4},"_spriteFrame":{"__uuid__":"7dJ9/Q1QlHvKNdfa9JgHN9"}}],"_contentSize":{"__type__":"cc.Size","width":256,"height":86},"_position":{"__type__":"cc.Vec2","x":34,"y":-120}},{"__type__":"cc.Node","_name":"结束界面-当前层数","_parent":{"__id__":3},"_children":[{"__id__":6}],"_components":[{"__type__":"cc.Sprite","node":{"__id__":5},"_spriteFrame":{"__uuid__":"a7tGS5v59Mi5cU9mxDxol9"}}],"_contentSize":{"__type__":"cc.Size","width":188,"height":188},"_scaleX":1.18,"_scaleY":1.18,"_position":{"__type__":"cc.Vec2","x":-228,"y":-48}},{"__type__":"cc.Node","_name":"currentTimLabel","_parent":{"__id__":5},"_components":[{"__id__":7}],"_color":{"__type__":"cc.Color","r":8,"g":179,"b":245},"_contentSize":{"__type__":"cc.Size","width":22,"height":40},"_scaleX":1.32,"_scaleY":1.32,"_position":{"__type__":"cc.Vec2","x":2,"y":1}},{"__type__":"cc.Label","node":{"__id__":6},"_useOriginalSize":false,"_N$string":"0","_N$horizontalAlign":1,"_N$verticalAlign":1},{"__type__":"cc.Node","_name":"score_frame","_parent":{"__id__":3},"_children":[{"__id__":9},{"__id__":10}],"_components":[{"__type__":"cc.Sprite","node":{"__id__":8},"_spriteFrame":{"__uuid__":"384Y9lRfdF7KMGlAAwZxHs"}}],"_contentSize":{"__type__":"cc.Size","width":282,"height":78},"_scaleX":0.86,"_scaleY":0.86,"_position":{"__type__":"cc.Vec2","x":-243,"y":120}},{"__type__":"cc.Node","_name":"Label-zi","_parent":{"__id__":8},"_components":[{"__type__":"cc.Label","node":{"__id__":9},"_useOriginalSize":false,"_N$string":"最高纪录：","_N$horizontalAlign":1,"_N$verticalAlign":1}],"_contentSize":{"__type__":"cc.Size","width":200,"height":40},"_scaleX":0.83,"_scaleY":0.83,"_position":{"__type__":"cc.Vec2","x":-46,"y":2}},{"__type__":"cc.Node","_name":"Label-shu","_parent":{"__id__":8},"_components":[{"__id__":11}],"_contentSize":{"__type__":"cc.Size","width":22,"height":40},"_position":{"__type__":"cc.Vec2","x":73}},{"__type__":"cc.Label","node":{"__id__":10},"_useOriginalSize":false,"_N$string":"0","_N$horizontalAlign":1,"_N$verticalAlign":1},{"__type__":"cc.Node","_name":"龙说1","_parent":{"__id__":3},"_components":[{"__type__":"cc.Label","node":{"__id__":12},"_useOriginalSize":false,"_N$string":"汝堂堂陈塘关\n总兵之子，\n不过尔尔。","_N$horizontalAlign":1,"_N$verticalAlign":1}],"_color":{"__type__":"cc.Color"},"_contentSize":{"__type__":"cc.Size","width":240,"height":120},"_scaleX":0.83,"_scaleY":0.83,"_position":{"__type__":"cc.Vec2","x":37,"y":85}},{"__type__":"cc.Node","_name":"龙说2","_parent":{"__id__":3},"_components":[{"__type__":"cc.Label","node":{"__id__":13},"_useOriginalSize":false,"_N$string":"雕虫小技，\n不足为虑也。","_N$horizontalAlign":1,"_N$verticalAlign":1}],"_color":{"__type__":"cc.Color","r":14,"g":13,"b":13},"_contentSize":{"__type__":"cc.Size","width":240,"height":80},"_position":{"__type__":"cc.Vec2","x":52,"y":85}},{"__type__":"cc.Node","_name":"龙说3","_parent":{"__id__":3},"_components":[{"__type__":"cc.Label","node":{"__id__":14},"_useOriginalSize":false,"_N$string":"岂有此理！\n这龙宫岂是你等\n小儿撒野之处？！","_N$horizontalAlign":1,"_N$verticalAlign":1}],"_color":{"__type__":"cc.Color","r":8,"g":8,"b":8},"_contentSize":{"__type__":"cc.Size","width":320,"height":120},"_scaleX":0.84,"_scaleY":0.84,"_position":{"__type__":"cc.Vec2","x":34,"y":79}},{"__type__":"cc.Node","_name":"龙说4","_parent":{"__id__":3},"_components":[{"__type__":"cc.Label","node":{"__id__":15},"_useOriginalSize":false,"_N$string":"没想到你还有点本事\n我海底龙宫无穷无尽，\n看你能得意到什么时候！","_N$horizontalAlign":1,"_N$verticalAlign":1}],"_color":{"__type__":"cc.Color","r":3,"g":3,"b":3},"_contentSize":{"__type__":"cc.Size","width":440,"height":120},"_scaleX":0.69,"_scaleY":0.69,"_position":{"__type__":"cc.Vec2","x":40,"y":25}}],{"__type__":"cc.SpriteFrame","content":{"name":"score_frame","texture":"e2Xd+U0HhHrJ2JiApgHxSy","rect":[0,0,282,78],"offset":[0,0],"originalSize":[282,78]}},{"__type__":"cc.SpriteFrame","content":{"name":"结束界面1","texture":"053GEe75NCEJZZV2vc0PKh","rect":[0,0,1024,509],"offset":[0,0],"originalSize":[1024,509]}},{"__type__":"cc.SpriteFrame","content":{"name":"结束界面-再玩一次","texture":"2cSa/xmhJJsbSbEzmSKrUg","rect":[415,340,256,86],"offset":[31,-128.5],"originalSize":[1024,509]}},{"__type__":"cc.SpriteFrame","content":{"name":"ball3","texture":"0e+/iqM8VJEJqc219jRiWz","rect":[0,0,188,188],"offset":[0,0],"originalSize":[188,188]}}]
+[
+  [
+    {
+      "__type__": "cc.SceneAsset",
+      "_name": "game-over-scene",
+      "scene": {
+        "__id__": 1
+      },
+      "asyncLoadAssets": null
+    },
+    {
+      "__type__": "cc.Scene",
+      "_name": "New Node",
+      "_children": [
+        {
+          "__id__": 2
+        }
+      ],
+      "_anchorPoint": {
+        "__type__": "cc.Vec2"
+      },
+      "autoReleaseAssets": false
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Canvas",
+      "_parent": {
+        "__id__": 1
+      },
+      "_children": [
+        {
+          "__id__": 3
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Canvas",
+          "node": {
+            "__id__": 2
+          }
+        }
+      ],
+      "_id": "4fZxW0GNJLrr3NzDnhF9RT",
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 960,
+        "height": 640
+      },
+      "_scaleX": 0.98,
+      "_scaleY": 0.98,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 480,
+        "y": 320
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "结束界面1",
+      "_parent": {
+        "__id__": 2
+      },
+      "_children": [
+        {
+          "__id__": 4
+        },
+        {
+          "__id__": 5
+        },
+        {
+          "__id__": 8
+        },
+        {
+          "__id__": 12
+        },
+        {
+          "__id__": 13
+        },
+        {
+          "__id__": 14
+        },
+        {
+          "__id__": 15
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 3
+          },
+          "_spriteFrame": {
+            "__uuid__": "5abFX7i4NIMbs4zpF/BMo4"
+          }
+        },
+        {
+          "__type__": "8f02apxiT5AaZP7x+xRE64n",
+          "node": {
+            "__id__": 3
+          },
+          "restart_btn": {
+            "__id__": 4
+          },
+          "currentTimLabel": {
+            "__id__": 7
+          },
+          "mostCurrentTimLabel": {
+            "__id__": 11
+          },
+          "longshuo1": {
+            "__id__": 12
+          },
+          "longshuo2": {
+            "__id__": 13
+          },
+          "longshuo3": {
+            "__id__": 14
+          },
+          "longshuo4": {
+            "__id__": 15
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 1024,
+        "height": 509
+      },
+      "_scaleX": 1.27,
+      "_scaleY": 1.27,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 5,
+        "y": 3
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "结束界面-再玩一次",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 4
+          },
+          "_spriteFrame": {
+            "__uuid__": "7dJ9/Q1QlHvKNdfa9JgHN9"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 256,
+        "height": 86
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 34,
+        "y": -120
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "结束界面-当前层数",
+      "_parent": {
+        "__id__": 3
+      },
+      "_children": [
+        {
+          "__id__": 6
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 5
+          },
+          "_spriteFrame": {
+            "__uuid__": "a7tGS5v59Mi5cU9mxDxol9"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 188,
+        "height": 188
+      },
+      "_scaleX": 1.18,
+      "_scaleY": 1.18,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -228,
+        "y": -48
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "currentTimLabel",
+      "_parent": {
+        "__id__": 5
+      },
+      "_components": [
+        {
+          "__id__": 7
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 8,
+        "g": 179,
+        "b": 245
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 22,
+        "height": 40
+      },
+      "_scaleX": 1.32,
+      "_scaleY": 1.32,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "node": {
+        "__id__": 6
+      },
+      "_useOriginalSize": false,
+      "_N$string": "0",
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "score_frame",
+      "_parent": {
+        "__id__": 3
+      },
+      "_children": [
+        {
+          "__id__": 9
+        },
+        {
+          "__id__": 10
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 8
+          },
+          "_spriteFrame": {
+            "__uuid__": "384Y9lRfdF7KMGlAAwZxHs"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 282,
+        "height": 78
+      },
+      "_scaleX": 0.86,
+      "_scaleY": 0.86,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -243,
+        "y": 120
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Label-zi",
+      "_parent": {
+        "__id__": 8
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 9
+          },
+          "_useOriginalSize": false,
+          "_N$string": "最高纪录：",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 200,
+        "height": 40
+      },
+      "_scaleX": 0.83,
+      "_scaleY": 0.83,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -46,
+        "y": 2
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Label-shu",
+      "_parent": {
+        "__id__": 8
+      },
+      "_components": [
+        {
+          "__id__": 11
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 22,
+        "height": 40
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 73
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "node": {
+        "__id__": 10
+      },
+      "_useOriginalSize": false,
+      "_N$string": "0",
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "龙说1",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 12
+          },
+          "_useOriginalSize": false,
+          "_N$string": "汝堂堂陈塘关\n总兵之子，\n不过尔尔。",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 240,
+        "height": 120
+      },
+      "_scaleX": 0.83,
+      "_scaleY": 0.83,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 37,
+        "y": 85
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "龙说2",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 13
+          },
+          "_useOriginalSize": false,
+          "_N$string": "雕虫小技，\n不足为虑也。",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 14,
+        "g": 13,
+        "b": 13
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 240,
+        "height": 80
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 52,
+        "y": 85
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "龙说3",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 14
+          },
+          "_useOriginalSize": false,
+          "_N$string": "岂有此理！\n这龙宫岂是你等\n小儿撒野之处？！",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 8,
+        "g": 8,
+        "b": 8
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 320,
+        "height": 120
+      },
+      "_scaleX": 0.84,
+      "_scaleY": 0.84,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 34,
+        "y": 79
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "龙说4",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 15
+          },
+          "_useOriginalSize": false,
+          "_N$string": "没想到你还有点本事\n我海底龙宫无穷无尽，\n看你能得意到什么时候！",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 3,
+        "g": 3,
+        "b": 3
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 440,
+        "height": 120
+      },
+      "_scaleX": 0.69,
+      "_scaleY": 0.69,
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 40,
+        "y": 25
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "score_frame",
+      "texture": "e2Xd+U0HhHrJ2JiApgHxSy",
+      "rect": [
+        0,
+        0,
+        282,
+        78
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        282,
+        78
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "结束界面1",
+      "texture": "053GEe75NCEJZZV2vc0PKh",
+      "rect": [
+        0,
+        0,
+        1024,
+        509
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1024,
+        509
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "结束界面-再玩一次",
+      "texture": "2cSa/xmhJJsbSbEzmSKrUg",
+      "rect": [
+        415,
+        340,
+        256,
+        86
+      ],
+      "offset": [
+        31,
+        -128.5
+      ],
+      "originalSize": [
+        1024,
+        509
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ball3",
+      "texture": "0e+/iqM8VJEJqc219jRiWz",
+      "rect": [
+        0,
+        0,
+        188,
+        188
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        188,
+        188
+      ]
+    }
+  }
+]
